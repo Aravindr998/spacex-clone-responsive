@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/generalstyle.css">
+  <link rel="stylesheet" href="styles/headerstyle.css">
+  <link rel="stylesheet" href="styles/mainstyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+                
+</head>
+<body  onload="moveUp()">
+  <nav class="container-fluid position-fixed pt-4 mt-3">
+    <div class="d-flex ">
+      <a class="navbar-brand ms-3 me-2" href="#">
+        <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50" class="spacex-logo">
+          <title>SpaceX Logo</title>
+          <g>
+            <path class="fill-white" d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
+            c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z"></path>
+          </g>
+          <g>
+            <path class="fill-white" d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
+            c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z"></path>
+          </g>
+          <g>
+            <polygon class="fill-white" points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	"></polygon>
+          </g>
+          <g>
+            <path class="fill-white" d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
+            c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z"></path>
+          </g>
+          <g>
+            <polygon class="fill-white" points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	"></polygon>
+            <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4"></rect>
+          </g>
+          <g>
+            <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z"></path>
+            <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z"></path>
+          </g>
+          <g>
+            <path class="fill-white" d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z"></path>
+          </g>
+        </svg>
+      </a>
+      <div class="d-lg-flex d-none pt-2">
+        <a href="#" class="nav-link text-white ps-lg-4 ps-3"><span class="un">FALCON 9</span></a>
+        <a href="#" class="nav-link text-white ps-lg-4 ps-3"><span class="un">FALCON HEAVY</span></a>
+        <a href="#" class="nav-link text-white ps-lg-4 ps-3"><span class="un">DRAGON</span></a>
+        <a href="#" class="nav-link text-white ps-lg-4 ps-3"><span class="un">STARSHIP</span></a>
+        <a href="#" class="nav-link text-white ps-lg-4 ps-3"><span class="un">HUMAN SPACEFLIGHT</span></a>
+        <a href="#" class="nav-link text-white ps-lg-4 ps-3"><span class="un">RIDESHARE</span></a>
+        <a href="#" class="nav-link text-white ps-lg-4 ps-3"><span class="un">STARLINK</span></a>
+    </div>
+    <div class="d-flex ms-auto me-3 pt-2">
+      <a href="#" class="nav-link text-white d-lg-block d-none"><span class="un">SHOP</span></a>
+      <button class="order-last hamburger pt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="closeButton()">
+        <div id="bar1" class="bar" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+        <div id="bar2" class="bar" style="width: 100%; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+        <div id="bar3" class="bar" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+    </button>
+    </div>
+    </div>
+    <aside id="sidebar" class="sidebar text-white">
+      <div class="d-lg-none sidebar-text">
+        <p class="text-end pb-2">FALCON 9</p>
+      </div>
+      <div class="d-lg-none sidebar-text">
+        <p class="text-end pb-2">FALCON HEAVY</p>
+      </div>
+      <div class="d-lg-none sidebar-text">
+        <p class="text-end pb-2">DRAGON</p>
+      </div>
+      <div class="d-lg-none sidebar-text">
+        <p class="text-end pb-2">STARSHIP</p>
+      </div>
+      <div class="d-lg-none sidebar-text">
+        <p class="text-end pb-2">HUMAN SPACEFLIGHT</p>
+      </div>
+      <div class="d-lg-none sidebar-text">
+        <p class="text-end pb-2">RIDESHARE</p>
+      </div>
+      <div class="d-lg-none sidebar-text">
+        <p class="text-end pb-2">STARLINK</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pb-2">MISSION</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">LAUNCHES</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">CAREERS</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">UPDATES</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">SHOP</p>
+      </div>
+    </aside>
+  </nav>
+  <section class="container-fluid background-1">
+    <div class="row h-100 " id="load-transition">
+        <div class="col-sm-4 col-6 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+          <h4>UPCOMING LAUNCH</h4>
+          <h2 class="crs-heading pb-3">CRS-26 MISSION</h2>
+          <div>
+            <button class="watch-button text-white">WATCH</button>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="container-fluid background-2">
+    <div class="row h-100">
+      <div class="col-sm-4 col-6 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+        <h4>RECENT LAUNCH</h4>
+        <h2 class="crs-heading pb-3">EUTELSAT 10B MISSION</h2>
+        <div>
+          <button class="watch-button text-white">REWATCH</button>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section class="container-fluid background-3">
+    <div class="row h-100">
+      <div class="col-sm-5 col-6 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+        <h2 class="crs-heading pb-3">STARSHIP SELECTED BY NASA TO SUPPORT SUSTAINED LUNAR EXPLORATION</h2>
+        <div>
+          <button class="watch-button text-white">LEARN MORE</button>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section class="container-fluid background-4">
+    <div class="row h-100">
+      <div class="col-sm-5 col-6 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+        <h2 class="crs-heading pb-3">STARSHIP UPDATE</h2>
+        <div>
+          <button class="watch-button text-white">LEARN MORE</button>
+        </div>
+      </div>
+  </div>
+  </section>
+  <footer class="container-fluid d-flex bg-black text-white justify-content-center pt-5 pb-5">
+        <p class="spacex">SPACEX	&#169; 2022</p>
+        <p class="footer-text">TWITTER</p>
+        <p class="footer-text">YOUTUBE</p>
+        <p class="footer-text">INSTAGRAM</p>
+        <p class="footer-text">FLICKER</p>
+        <p class="footer-text">LINKEDIN</p>
+        <p class="footer-text">PRIVACY POLICY</p>
+        <p class="footer-text">SUPPLIERS</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

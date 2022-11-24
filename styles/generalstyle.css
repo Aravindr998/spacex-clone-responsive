@@ -1,0 +1,9 @@
+:root{
+  --general-font: 'D-DIN', sans-serif;
+}
+p{
+  margin: 0 !important;
+}
+body{
+  font-family: var(--general-font);
+}

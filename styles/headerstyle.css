@@ -1,0 +1,52 @@
+.spacex-logo{
+  width: 13rem;
+  fill: white;
+  box-sizing: content-box;
+  padding-left: 2.1rem;
+}
+.nav-bar{
+  padding-top: 1.4rem !important;
+  padding-left: 2.3rem !important;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.nav-link{
+  font-family: var(--general-font) !important;
+  font-size: 0.9rem !important;
+  white-space: nowrap;
+  font-weight: 600 !important;
+}
+.un{
+  padding-bottom:2px;
+  background-image: linear-gradient(rgb(255, 255, 255) 0 0);
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+.un:hover{
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+.nav-item{
+  padding-right: .8rem;
+}
+.bar{
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 0.1rem;
+  transform-origin: center center;
+  transition: .25s ease-in;
+}
+.hamburger{
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: 1.8rem;
+  z-index: 99;
+}

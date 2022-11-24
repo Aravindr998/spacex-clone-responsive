@@ -1,0 +1,89 @@
+.background-1{
+  background-image: url(../Images/bg-1.webp);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-2{
+  background-image: url(../Images/bg-2.webp);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-3{
+  background-image: url(../Images/bg-3.webp);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-4{
+  background-image: url(../Images/bg-4.webp);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  width: 0rem;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  padding-left: 0;
+  padding-top: 6rem;
+}
+aside div{
+  margin-left: 4rem;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+  font-family: var(--general-font);
+  white-space: nowrap;
+}
+.sidebar-text{
+  opacity: 0;
+  margin-top: 0.5rem;
+  transition: opacity 2s, margin 0.5s;
+  transition-delay: 0.25s,0.25s;
+}
+.main-content{
+  font-family: var(--general-font);
+}
+.main-content h2{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.main-content h4{
+  font-size: 1.3rem;
+}
+.watch-button{
+  font-family: inherit;
+  padding: 1em 3.8em;
+  border: 2px solid white;
+  background-color: transparent;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background-image: linear-gradient(white 0 0);
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.3s, background-position 0s 0.3s, color 0.3s;
+}
+.watch-button:hover{
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  color: black !important;
+}
+.spacex{
+  font-size: 0.7rem;
+}
+.footer-text{
+  font-size: 0.7rem;
+  padding-left: 2.5rem;
+  font-weight: bold;
+}
+/* #load-transition{
+  transform: translateY(3rem);
+  opacity: 0;
+  transition: 0.5s linear;
+} */
