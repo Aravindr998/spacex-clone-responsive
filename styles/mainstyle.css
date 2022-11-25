@@ -3,24 +3,28 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .background-2{
   background-image: url(../Images/bg-2.webp);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .background-3{
   background-image: url(../Images/bg-3.webp);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .background-4{
   background-image: url(../Images/bg-4.webp);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .sidebar{
   position: fixed;
@@ -33,6 +37,7 @@
   transition: 0.5s ease-in-out;
   padding-left: 0;
   padding-top: 6rem;
+
 }
 aside div{
   margin-left: 4rem;
@@ -57,7 +62,6 @@ aside div{
   font-size: 1.3rem;
 }
 .watch-button{
-  font-family: inherit;
   padding: 1em 3.8em;
   border: 2px solid white;
   background-color: transparent;
@@ -79,7 +83,7 @@ aside div{
 }
 .footer-text{
   font-size: 0.7rem;
-  padding-left: 2.5rem;
+  padding-left: 3%;
   font-weight: bold;
 }
 #load-transition-1{
@@ -97,7 +101,7 @@ aside div{
   opacity: 0;
   transition: 0.9s linear;
 }
-.text-1{
+/* .text-1{
   transform: translateY(3rem);
   opacity: 0;
   transition: 0.5s linear;
@@ -136,4 +140,15 @@ aside div{
   transform: translateY(3rem);
   opacity: 0;
   transition: 0.6s linear;
+} */
+@media(max-width: 660px){
+  .main-content h4{
+    font-size: 1rem;
+  }
+  .main-content h2{
+    font-size: 2.5rem;
+  }
+}
+footer{
+  flex-wrap: wrap;
 }

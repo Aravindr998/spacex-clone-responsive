@@ -1,18 +1,23 @@
 let flag=0;
 function closeButton() {
   if(flag==0){
+    var w = window.innerWidth;
     document.getElementById("bar1").style.transform = 'matrix(0.7071, 0.7071, -0.7071, 0.7071, 0, 4)';
     document.getElementById("bar2").style.width = '0%';
     document.getElementById("bar2").style.transform = 'matrix(1, 0, 0, 1, 8, 0)';
     document.getElementById("bar3").style.transform = 'matrix(0.7071, -0.7071, 0.7071, 0.7071, 0, -4)';
-    document.getElementById("sidebar").style.width = '21.875rem';
+    if(w<768){
+      document.getElementById("sidebar").style.width = '70%';
+    }
+    else{
+      document.getElementById("sidebar").style.width = '21.875rem';
+    }
     document.getElementById("sidebar").style.paddingRight = '2rem';
     const sideBar = document.getElementsByClassName('sidebar-text')
     for(i=0;i<sideBar.length;i++){
       sideBar[i].style.opacity = '1';
       sideBar[i].style.marginTop = '0';
     }
-    // document.getElementById("sidebar").style.visibility = 'visible';
     flag=1;
   }else{
     document.getElementById("bar1").style.transform = 'matrix(1, 0, 0, 1, 0, 0)';
@@ -26,7 +31,6 @@ function closeButton() {
       sideBar[i].style.opacity = '0';
       sideBar[i].style.marginTop = '0.5rem';
     }
-    // document.getElementById("sidebar").style.visibility = 'hidden';
     flag=0;
   }
 }
@@ -52,6 +56,7 @@ function animated(){
   document.getElementById('animate-5').style.opacity = '1';
   document.getElementById('animate-5').style.transform = 'translateY(0)';
 }
+let temp = 0;
 function animatedTwo(){
   document.getElementById('animate-6').style.opacity = '1';
   document.getElementById('animate-6').style.transform = 'translateY(0)';

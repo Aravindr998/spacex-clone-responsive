@@ -50,3 +50,17 @@
   margin-left: 1.8rem;
   z-index: 99;
 }
+@media(max-width: 1200px){
+  .navbar-brand{
+    position: fixed;
+    left: 50%;
+    top: 1rem;
+    transform: translate(-50%, 0%);
+  }
+  .spacex-logo{
+    width: 9rem !important;
+  }
+}
+nav{
+  z-index: 99;
+}
