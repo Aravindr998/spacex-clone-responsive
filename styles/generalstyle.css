@@ -1,9 +1,12 @@
 :root{
   --general-font: 'D-DIN', sans-serif;
+  overflow-x: hidden !important;
 }
 p{
   margin: 0 !important;
 }
 body{
   font-family: var(--general-font);
+  min-width: 286px;
+
 }
