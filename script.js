@@ -42,25 +42,5 @@ function moveUp(){
   document.getElementById('load-transition-3').style.opacity = '1';
   document.getElementById('load-transition-3').style.transform = 'translateY(0)';
 }
-function animates(){
-  document.getElementById('animate-1').style.opacity = '1';
-  document.getElementById('animate-1').style.transform = 'translateY(0)';
-  document.getElementById('animate-2').style.opacity = '1';
-  document.getElementById('animate-2').style.transform = 'translateY(0)';
-  document.getElementById('animate-3').style.opacity = '1';
-  document.getElementById('animate-3').style.transform = 'translateY(0)';
-}
-function animated(){
-  document.getElementById('animate-4').style.opacity = '1';
-  document.getElementById('animate-4').style.transform = 'translateY(0)';
-  document.getElementById('animate-5').style.opacity = '1';
-  document.getElementById('animate-5').style.transform = 'translateY(0)';
-}
-let temp = 0;
-function animatedTwo(){
-  document.getElementById('animate-6').style.opacity = '1';
-  document.getElementById('animate-6').style.transform = 'translateY(0)';
-  document.getElementById('animate-7').style.opacity = '1';
-  document.getElementById('animate-7').style.transform = 'translateY(0)';
-}
+
 
